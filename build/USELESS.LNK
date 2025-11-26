@@ -1,0 +1,3 @@
+file {
+     ee\uds ee\evs play.obj uss.obj ussvar.obj hardware.obj memory.obj sbdrv.obj
+     mix.obj nosnddrv.obj gusdrv.obj timer.obj usmplay.obj }

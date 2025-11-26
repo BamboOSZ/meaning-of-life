@@ -1,0 +1,13 @@
+;INCLUDE effects\blur.asm
+INCLUDE effects\resize.asm
+;INCLUDE effects\bumpmap.asm
+INCLUDE effects\write.asm
+INCLUDE effects\fade.asm
+INCLUDE effects\text.asm
+INCLUDE effects\letsfun.asm
+INCLUDE effects\recta.asm
+INCLUDE effects\fparticl.asm
+INCLUDE effects\bitmap.asm
+INCLUDE effects\bitmeff\bitmeff.inc
+INCLUDE effects\interp.asm
+jmp     SError

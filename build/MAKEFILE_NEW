@@ -1,0 +1,58 @@
+# Makefile for "Meaning of the Life" - Updated for new directory structure
+# Original by FreddyV/Useless, updated by BamboOS
+#
+# Use with TASM and WLINK
+
+# Project directories (relative to build/)
+SRC_DIR = ../src
+THIRD_PARTY = ../third-party
+USELESS_SRC = $(THIRD_PARTY)/useless
+TINYGUS_SRC = $(THIRD_PARTY)/tinygus
+OUTPUT_DIR = ./binaries
+
+# Assembler parameters
+# /m2       2 passes
+# /t        Suppress messages if successful assembly
+ASMPARAM = /m2 /t /I$(SRC_DIR)/inc /I$(USELESS_SRC) /I$(TINYGUS_SRC) /dUsePMODEW_ASM
+
+# Linker parameters
+LINKPARAM = system pmodew
+
+ASM = TASM $(ASMPARAM)
+LINK = WLINK $(LINKPARAM)
+
+# Main target
+meaning.exe: main.obj code32.obj data32.obj memalloc.obj setup.obj
+	$(LINK) file main.obj,code32.obj,data32.obj,memalloc.obj,setup.obj name $(OUTPUT_DIR)/meaning.exe
+	$(THIRD_PARTY)/pmodew/pmwsetup /b0 /q $(OUTPUT_DIR)/meaning.exe
+
+# Main source files
+main.obj: $(SRC_DIR)/MAIN.ASM $(SRC_DIR)/inc/*.inc
+	$(ASM) $(SRC_DIR)/MAIN.ASM
+
+code32.obj: $(SRC_DIR)/CODE32.ASM $(SRC_DIR)/inc/*.inc $(SRC_DIR)/scenes/*.asm $(SRC_DIR)/effects/*.asm
+	$(ASM) $(SRC_DIR)/CODE32.ASM
+
+data32.obj: $(SRC_DIR)/DATA32.INC $(SRC_DIR)/data/*.inc
+	$(ASM) $(SRC_DIR)/DATA32.INC
+
+memalloc.obj: $(SRC_DIR)/MEMALLOC.INC
+	$(ASM) $(SRC_DIR)/MEMALLOC.INC
+
+setup.obj: $(SRC_DIR)/SETUP.INC
+	$(ASM) $(SRC_DIR)/SETUP.INC
+
+# Clean target
+clean:
+	del *.obj
+	del *.map
+	del *.err
+
+# Help target
+help:
+	@echo Available targets:
+	@echo   meaning.exe  - Build the main executable
+	@echo   clean        - Remove object files
+	@echo   help         - Show this help
+
+.PHONY: clean help

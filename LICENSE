@@ -1,0 +1,124 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+
+Copyright (c) 2000-2025 BamboOS and Diomatic (CruX)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to 
+Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+================================================================================
+ADDITIONAL RESTRICTIONS AND PROHIBITIONS
+================================================================================
+
+ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING PROHIBITION:
+The use of this work, in whole or in part, for training, fine-tuning, or 
+otherwise improving artificial intelligence models is strictly prohibited. 
+This includes but is not limited to:
+
+- Training language models on this source code
+- Using this code in machine learning datasets  
+- Incorporating this code into AI development pipelines
+- Creating embeddings or representations for AI systems
+- Training neural networks, large language models, or code generation models
+- Any automated system designed to generate code, text, or other content
+
+This prohibition applies to all current and future AI technologies, whether 
+commercial or non-commercial.
+
+COMMERCIAL USE PROHIBITION:
+Commercial use is strictly prohibited without explicit written permission 
+from the copyright holders. This includes but is not limited to:
+
+- Sale or licensing of this work for profit
+- Use in commercial products or services
+- Incorporation into proprietary software
+- Use by commercial entities for any purpose
+- Patent applications based on this work
+
+PERMITTED USES:
+✓ Personal study and education
+✓ Historical preservation and archiving
+✓ Academic research (non-commercial)
+✓ Demoscene community activities
+✓ Modification for personal use
+✓ Non-commercial derivative works (under same license)
+
+REQUIREMENTS:
+- Attribution to original authors must be maintained in all copies
+- This license must be included with all copies or substantial portions
+- Derivative works must be licensed under identical terms
+- Changes must be clearly documented and attributed
+
+ENFORCEMENT:
+Violation of these terms constitutes copyright infringement and may result 
+in legal action seeking damages and injunctive relief. The copyright holders 
+reserve all rights not expressly granted herein.
+
+For commercial licensing inquiries, contact the copyright holders.
+
+================================================================================
+CREATIVE COMMONS ATTRIBUTION-NONCOMMERCIAL-SHAREALIKE 4.0 INTERNATIONAL LICENSE
+================================================================================
+
+You are free to:
+
+Share — copy and redistribute the material in any medium or format
+Adapt — remix, transform, and build upon the material
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, 
+and indicate if changes were made. You may do so in any reasonable manner, but 
+not in any way that suggests the licensor endorses you or your use.
+
+NonCommercial — You may not use the material for commercial purposes.
+
+ShareAlike — If you remix, transform, or build upon the material, you must 
+distribute your contributions under the same license as the original.
+
+No additional restrictions — You may not apply legal terms or technological 
+measures that legally restrict others from doing anything the license permits.
+
+Notices:
+
+You do not have to comply with the license for elements of the material in 
+the public domain or where your use is permitted by an applicable exception 
+or limitation.
+
+No warranties are given. The license may not give you all of the permissions 
+necessary for your intended use. For example, other rights such as publicity, 
+privacy, or moral rights may limit how you use the material.
+
+================================================================================
+THIRD-PARTY COMPONENTS
+================================================================================
+
+This work incorporates third-party components with their own licensing terms:
+
+1. Cubic Tiny GUS Player
+   - Author: Niklas Beisert / pascal
+   - Copyright: (c) 1995/1996
+   - License: Custom permissive (see TINYGUS/MXMPLAY.DOC)
+   - Usage: XM music playback system
+
+2. Useless Sound System
+   - Author: FreddyV/Useless (Freddy Vetele)  
+   - Copyright: (c) 1996-1997
+   - License: Custom permissive
+   - Usage: Multi-format audio system
+
+3. PMODE/W DOS Extender
+   - Authors: Charles Scheffold, Thomas Pytel
+   - License: Freely redistributable
+   - Usage: 32-bit DOS protected mode extender
+
+All third-party components are used in accordance with their respective licenses 
+and are subject to their original terms in addition to the restrictions above.
+
+================================================================================
+
+This license file was created on November 26, 2025.
+For questions about licensing, please contact the repository maintainer.

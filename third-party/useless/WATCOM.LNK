@@ -1,0 +1,11 @@
+system begin pmodew
+    option osname='PMODE/W'
+    libpath %WATCOM%\lib386
+    libpath %WATCOM%\lib386\dos
+    op stub=pmodew.exe
+    format os2 le
+end
+file {play uss ussvar usmplay 
+      xmload loadutil 
+      iwdrv gusdrv sbdrv hpdrv nosnddrv mix 
+      error hardware memory files timer utils}

@@ -1,0 +1,17 @@
+INCLUDE INC\UDS.INC
+INCLUDE INC\EVS.INC
+if UseMXM
+INCLUDE TINYGUS\MXMPLAY.INC
+endif
+if UseUsl
+;INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\OS.INC
+
+INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\HARDWARE.INC
+
+INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\USMPLAY.INC
+INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\USS.INC
+INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\USSVAR.INC
+
+INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\MEMORY.INC
+INCLUDE C:\Work\BamboOS\Asm\2000\Sound\usmm11\Src\TIMER.INC
+endif

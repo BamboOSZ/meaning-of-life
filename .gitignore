@@ -1,0 +1,72 @@
+# Compiled binaries
+*.EXE
+*.exe
+*.OBJ
+*.obj
+*.MAP
+*.map
+*.COM
+*.com
+
+# Development files
+*.BAK
+*.bak
+COMPILE.LOG
+*.log
+
+# Personal/sensitive files (if any remain)
+*personal*
+*address*
+
+# Archives and temporary files
+*.RAR
+*.rar
+*.ZIP
+*.zip
+*.7z
+
+# IDE and system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Build outputs
+build/output/
+build/temp/
+build/*.exe
+build/*.obj
+
+# Backup files
+*~
+*.orig
+*.tmp
+
+# OS generated files
+desktop.ini
+.directory
+
+# Development tools output
+*.lst
+*.sym
+*.err
+
+# Binary assets (keep source assets)
+*.raw
+*.pcx
+*.bmp
+*.wav
+*.mod
+*.s3m
+*.it
+*.xm
+*.mxm
+*.usm
+
+# Exception: Keep important binary files
+!build/binaries/MEANING.EXE
+!third-party/*/*.exe
+!third-party/*/*.obj

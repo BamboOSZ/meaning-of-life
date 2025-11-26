@@ -1,0 +1,45 @@
+;CODE By bAMBOos^CruX
+;    תתתתתתתתשששששששש----======[Precalc Tunel]=====------שששששששששתתתתתתתתת
+; in:
+;  ebx - size
+nTunel          PROC
+                LOCALS
+                mov     edx,400
+              @@PrecLoopY:             ;       F P U   Status
+                mov     ecx,640
+              @@PrecLoopX:
+
+                push    ecx
+                push    edx
+                lea     ecx,[ecx-320]
+                lea     edx,[edx-200]
+                mov     TSize,ebx
+                fild    TSize
+                mov     ValX,ecx        ;
+                fild    ValX            ;  VX   |      |
+                fmul    st,st           ;  VX‎  |      |
+                mov     ValY,edx        ;
+                fild    ValY            ;  VY   | VX‎  |
+                fmul    st,st           ;  VY‎  | VX‎  |
+                fadd                    ; Y‎+X‎ |      |
+                fabs                    ;  ____
+                fsqrt                   ; ûY‎+X‎|
+                fmul
+                fistp   ValY
+                shl     ValY,16
+                mov     eax,ValY
+                mov     dword ptr[edi],eax
+                pop     edx
+                pop     ecx
+
+                lea     edi,[edi+4]     ;   Make Loop
+                lea     ecx,[ecx-1]     ;
+                test    ecx,ecx
+                jnz     @@PrecLoopX    ;
+                lea     edx,[edx-1]     ;
+                test    edx,edx
+                jnz     @@PrecLoopY    ;
+                NOLOCALS
+                ret
+nTunel          ENDP
+;      תתתתתתתתשששששששש----======[Eo Tunel]=====------שששששששששתתתתתתתתת

@@ -68,5 +68,6 @@ desktop.ini
 
 # Exception: Keep important binary files
 !build/binaries/MEANING.EXE
+!build/releases/*/*.exe
 !third-party/*/*.exe
 !third-party/*/*.obj
